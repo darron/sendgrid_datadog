@@ -27,5 +27,6 @@ points.each do |point|
       tags << "#{key}:#{value}"
     }
   end
-  dog.emit_point("sendgrid.#{point['metric_name']}", 1, tags: tags)
+  tags << "event_type:#{point['metric_name']}"
+  dog.emit_point('sendgrid.event', 1, tags: tags, metric_type: 'counter')
 end
