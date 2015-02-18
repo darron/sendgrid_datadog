@@ -10,3 +10,5 @@ But it's pretty inefficient as an Iron.io worker and will end up being pretty ex
 Going to abandon for now and re-do as a small Sinatra web app.
 
 You can adjust the Sendgrid Events webhook from [this page](https://sendgrid.com/app).
+
+`curl -XPOST -H 'Content-Type:application/json' -H 'Accept: application/json' --data-binary @sendgrid.json http://localhost:4567/sendgrid/ -v -s`
