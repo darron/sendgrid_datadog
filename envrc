@@ -1,0 +1,2 @@
+export BASE_URL="desired-url-goes-here"
+export DD_API_KEY="api-key-goes-here"
