@@ -28,3 +28,7 @@ post "/#{ENV['BASE_URL']}/" do
   end
   '200'
 end
+
+get "/" do
+  '200'
+end
